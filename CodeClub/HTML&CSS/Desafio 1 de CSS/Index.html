@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Desafio 2 de HTML</title>
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+   <div class="formulario">
+      <h1>Cadastro</h1>
+      <form action="" method="post">
+         <label for="">Nome:
+            <input placeholder="Insira seu nome" type="text" name="nome" autofocus>
+         </label>
+         <hr class="hr">
+
+         <label for="">Email:
+            <input placeholder="Insira seu email"type="email" name="e-mail">
+         </label>
+         <hr  class="hr">
+
+         <label for="">Idade:
+            <input placeholder="Insira sua idade" type="number" name="idade" min="12">
+         </label>
+         <hr  class="hr">
+
+         <label for="">Data de nascimento:
+            <input type="date" name="Calendario">
+         </label>
+         <hr  class="hr">
+
+         <label  for="">Onde voçê possui conta :
+            <input class="check" type="checkbox" name="instagram">
+            Instagram
+            <input class="check" type="checkbox" name="facebook">
+            Facebook
+            <input class="check" type="checkbox" name="Youtube">
+            Youtube
+         </label>
+         <hr  class="hr">
+
+         <label for="">Sexo:
+            <input type="radio" name="sexo" value="masculino" checked>
+            Masculino
+            <input type="radio" name="sexo" value="feminino">
+            Feminino
+         </label>
+         <hr  class="hr">
+
+         <label for="">Cor dos Olhos:
+            <input value="#0000FF" type="color" name="color-eyes">
+         </label>
+         <hr  class="hr">
+
+         <label for="">Biografia:</label><br>
+         <textarea class="area-name" name="biografia" cols="50" rows="5"></textarea>
+         <hr  class="hr">
+
+         <label for="">Foto do perfil :
+            <input type="file" accept="png" name="perfil">
+         </label>
+         <hr  class="hr">
+
+         <label for="">Telefone:
+            <input placeholder="Insira seu telefone" type="tel" name="telefone">
+         </label>
+         <hr  class="hr">
+
+         <label for="">Link do Perfil do Facebook:
+            <input placeholder="Insira seu Facebook"type="url" name="Perfil">
+         </label>
+         <hr  class="hr">
+
+         <label for="">Senha:
+            <input placeholder="Insira sua senha" type="password" name="senha" minlength="6" maxlength="8">
+         </label>
+         <hr class="hr">
+
+         <button class="clear button" type="reset ">Limpar</button>
+         <button class="Send button" type="submit">Enviar</button>
+      </form>
+
+   </div>
+
+
+
+
+
+
+</body>
+
+</html>

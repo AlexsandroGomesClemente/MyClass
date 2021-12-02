@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Road Rage', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
+    ;
+}
+a {
+    text-decoration: none;
+}
+
+.logan {
+    display: block;
+    margin: 195px auto 122px auto;
+}
+
+input {
+    display: block;
+    background: #F7F7F7;
+    box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    width: 321px;
+    height: 46px;
+    margin: 0px auto 0px auto;
+    border: none;
+}
+
+input::placeholder {
+    color: #969696;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 15px;
+
+}
+
+.Inp {
+    margin-top: 21px;
+}
+
+.forgot {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 15px;
+    display: block;
+    color: black;
+    font-weight: 700;
+    margin: 23px 0px 23px 225px;
+    font-size: 13px;
+}
+
+button {
+    background: #323232;
+    box-shadow: -4px 4px 18px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    display: block;
+    margin: 38px auto 22px auto;
+    width: 133px;
+    height: 46px;
+    border: none;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+}
+
+.new {
+    display: block;
+    text-align: center;
+    margin: 0px auto 62px auto;
+    font-size: 15px;
+    line-height: 18px;
+    color: #969696;
+}
+
+strong {
+    color: black;
+}
+
+p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0px auto 18px auto;
+    color: #000000;
+}
+
+.Imagen {
+    text-align: center;
+    margin: 18px auto 10px auto;
+}
+.dots { 
+    margin: 0px 16px 0px 16px ;
+}

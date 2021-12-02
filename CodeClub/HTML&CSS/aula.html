@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de HTML & CSS</title>
+</head>
+
+<body>
+
+
+    <!--Aulas de HTML -->
+
+
+    <!-- Aula 5 Tags para escrever Textos 
+    
+        <h1 ao h6 > = Tag's para escrever o titulo , sendo 1 o maior e 6 o menor, o site deve contar apenas com apenas um H1 para facilitar para google.
+        <p> = Tag de Parágrafo.
+        <b> = Tag usada para deixar o texto em negrito.
+        <i> = Tag usada pra Italic 
+        <strong> = Tag usada para deixar em negrito , porem ele da uma importancia ao texto.
+        <br> = Tag brack usada para quebrar as linhas ou pular.
+    -->
+    <!-- Aula 6 Elementos estruturais
+        
+        <div> = É como se fosse uma caixa.Serve para organizar diversos elementos.
+        <span> = Como se fosse uma caixa para guarda texto e organizar.
+    -->
+    <!--Aula 7 Listas
+        Listas Ordenadas
+        <ol> = Cria lista ordenada
+            <li> = Item da lista ordenada
+        
+        Lista Não ordenada.
+        <ul> = Cria lista não ordenada.
+            <li> = Item da lista.
+    -->
+    <!--Aula 8 Links
+        <a> = Tag de criação de Link, Tag de ancora.
+            Prop href="Parametro de para onde o link vai dericionar."
+            Prop target="_blanck Cria em outra pagina."
+            Prop href="mailto:meuemail." = Prop usada para enviar para um email.
+            Prop href = "tel:+55+Meunumero"= Prop usada para enviar o conteudo para ligação.
+            Prop href = "#fim" = vai para algum lugar da pagina .
+    -->
+    <!--Aula 9 Navegando entre pastas.
+        ./ = No mesmo nivel , mesma pasta 
+        ../ = Para subir um nivel , voltar para uma pasta anterior.
+        ../../../ = Para ir subindo os niveis.
+    -->
+
+    <!--Aula 10 Desafio HTML -->
+    <!--Aula 11 Tabelas
+        <table> = Cria a tabela
+            <tr>= Cria a coluna da tabela
+                <th> = cria a linha do cabeçalho
+            <tr> = cria outra coluna
+                <td> = cria a linha da tabela
+        Para border = para adcionar uma borda na tabela.
+        cellpandding = para dar um espaçamento na tabela
+        bordercolor = para colori a borda.
+    -->
+    <!--Aula 12 Imagens 
+        <img > = para criar uma imagem
+            src = para chamar a imagem.
+            alt = para inserir um texto alternativo e para leitor de tela poder ler .
+            width = largura da imagem.
+            height = altura da imagem.
+
+        <figure> = Local para colocar a imagem, e utilizar para os leitores do google.
+            <img>
+            <figcaption> = Para inserir uma legenda na imagem
+    -->
+
+    <!--Aula 13 Videos 
+        <video > = Serve para colocar o video.
+            src = para buscar o video.
+            controls = serve para adicionar os controles do videos.
+            width = para largura 
+            height = para altura
+            autoplay = para o video inciar assim que a pag carregar.
+            loop = Para quando o video acabar e ele começar de novo.
+            muted = para o video começar com o som mutado,os navagadores permitem o autoplay quando existe essa função.
+            poster = Para colocar um poster no video .
+        
+        <source> = Serve para colocar o src do video em outros formatos.    
+    -->
+    <!--Aula 14  iFrame 
+        
+        <iframe> = Serve para colocar um site dentro de outro site.
+            src = para pegar a pagina.
+            Bom para incorporar um mapa.
+    -->
+
+    <!--Aula 15 Forms
+        <form> = Serve para inciar um formulario.
+            prop action = Define para qual URL sera enviado os dados.
+            prop method = Qual o metodo de envio do formulario. GET e POST.
+            GET - Envia os dados Livre .
+            Post = Envia os dados por debaixo da URL.
+            Input = Para entrar com algum dado.
+    -->
+    <!--Aula 16 Inputs part 1 
+    
+        <input> = serve para o usuario poder inserir um dado.
+            prop autcomplete = Qual o tipo de dado que ele vai completar.
+            prop autofocus = Opção para quando a pagina for carregada ela ser focada.
+            prop disable = Para desabilitar o input.
+            prop value = Para definir um valor ao input.
+            prop readonly = Para definir uma informação apenas para leitura.
+            prop placeholder = Texto que fica dentro do input.
+        <label> = Serve para colocar o nome do campo.
+    -->
+
+    <!--Aula 17 Inputs parte 2 
+        Tipos de Inputs 
+            Passaword = Serve para colocar senhas.
+                prop minlength = serve para colocar a quantidade minima de caracters.
+                um formulario só e valido quando é enviado.
+            <button> = Serve para criar um butão para enviar.
+                prop submit = Serve para enviar.
+                prop maxlength = Serve para colocar um máximo de caracters.
+                prop inputmode= Serve para colocar o tipo de teclado númerico no celulares.
+    -->
+
+    <!--Aula 18 Inputs parte 3 
+        Tipos de inputs.
+            Number = Serve só para aceitar números.
+            E-mail = Serve só para envios de email.
+            Checkbox = Serve para por uma caixinha.
+            Radio = Serve para colocar um seletor .
+            URL = Serve para colocar URLS no input.
+    -->
+    <!--Aula 19 Inputs parte 4 
+        Tipos de Input 
+            File = Serve para enviar arquivos.
+                propt accept = Serve para inserir arquivos no formato desejado.
+                propt multiple = Serve para poder liberar varios arquivos.
+                Só envia via method POST 
+                prop enctype = multipart/form-data para enviar.
+            Color = Serve para selecionar uma cor e enviar.
+                propt value = Para inserir um valor ao input.
+            Range = Serve para enviar um range.
+                prop min = serve para um valor minimo
+                prop max = serve para o valor max
+                prop setep = serve para mudar o passo.
+    -->
+
+    <!-- Aula 20 Button 
+        <button > = Serve para enviar o formulario.
+            button = para ser do tipo button
+            Reset = Serve para resetar ao envio.
+            autofocus = Para dar foco no button.   
+            value = Para inserir um valor ao button.
+            name = Para dar um nome ao input.     
+    -->
+
+    <!--Aula 21 Desafio HTML 2 -->
+
+    <!--Aula 22 HTML Semântico
+        É usado para ajudar o Google a encontrar e rankear um site.
+        <header> = Usada para agrupar os componentes do cabeçalho.
+        <nav> = Usada para agrupar os componentes do menu.
+        <main> = Usado para o conteudo principal da pagina.
+        <section>=Usada para dividir o conteudo em varias seções;
+        <article> = Usada para dividir os artigos do site.
+        <aside> = Usado para fazer referencia ao conteudo original do site.
+        <footer> = Usada para agrupar os componetes do rodapé.
+    -->
+
+    <!--Aula 23 Identação de Código 
+        Serve para organizar o código arrumar a mesa.
+        Aperte o Tab para indentar. 
+    -->
+
+
+    <!--Fim das Aulas de HTML-->
+
+    <!--Aulas de CSS -->
+
+    <!--Aula 3 Seletores 
+        Existem varios tipos de seletores, porém os mais usados são.
+
+            Seletor de ID = # 
+            Seletor de Class = . 
+            Seletor de Tag = <Tag>
+            Seletor por Prop = [href=Prop].
+    -->
+
+    <!--Aula 4 Cores no CSS
+     As cores são muitos importante para a estilização de uma página, existem varias formas de codar a cor as mais usadas são.
+
+     Cor pelo nome = color = blue .
+     Cor via RGB = rgb(red,green,blue)
+     Cor via Hexadecimal = #RRGGBB.
+    
+    -->
+
+    <!--Aula 5 Unidade de medidas
+    
+    No CSS existem 2 tipos de unidades de medida.
+
+    Unidades Absolutas : cm 
+                         in (1 polegada = 2,54cm)
+                         px (1 pixel = 1/90 in).
+    
+    Unidades Relativas : em (relativo ao elemento pai)
+                         rem (relativo ao elemento root)
+                         % (sempre relativo ao pai)
+                         vw (viewport width)
+                         vh (viewport height)
+    -->
+
+    <!--Aula 6 Lidando com textos no CSS
+
+        font-family = Ao estilo da fonte do site.
+        color = Igual a cor do elemento.
+        font-weight = Igual ao espaçamento da fonte.
+        font-style = Igual ao estilo da letra italic etc...
+        line-heigth = Igual a altura da linha.
+        letter-spacing = Espaçamento da letra;
+        word-spacing = Espaçamento da palavra.
+        text-align = alinhamento do texto.
+        text-transform = Transforma todas as palavras com a primeira letra maiuscula.
+        text-decoration = decora o texto.    
+    -->
+
+    <!--Aula 7 Padding e Margin
+    
+        Padding é o espaçamento dentro da caixa o conteudo.
+        Margin é o espaçamento fora da caixa , fora do conteudo.
+    -->
+
+    <!--Aula 8 Box-Sizing
+
+        Por padrão a pagina vem com box-sizing somando a borda assim tendo que ficar calculando o tamanho e a largura.
+        com o box-sizing = border-box a altura e a largura não é influenciada.
+    -->
+
+    <!--Aula 9 Display 
+     No display a gente tem varios tipos porém os mais usados são.
+
+     display = block = Ele fica com a linha só para ele e sofre alteração de altura e largura
+               inline = inline não sofre alteração das alturas e larguras , porem coloca os items em linha
+               inline-block = É a mesclagem dos dois.
+
+               flex 
+               Grid
+    -->
+
+    <!--Aula 10 !important
+    
+    !important = É a tag usada para dar prioridade no estilo de css.
+    -->
+
+    <!--Aula 11 CSS no HTML
+        
+        Existem 3 formas de inserir css no html.
+
+        inline = <tag style = 'color=red'.
+        na pagina = <Style></style>
+        e importado = <link rel='stylesheet' src='estilo.css'>
+    -->
+
+    <!--Aula 12 Desafio 1 de CSS-->
+
+    <!--Aula 14 Position 
+        posição serve para realocar o elemento na pagina.
+
+        position = static (padrao) = Não aceita valores top,bottom,right,left.
+        position = fixed = fixa o elemento na tela.
+        position = sitcky = age como um adesivo, fixa o elemento só a onde eu determinar.
+        position = relative = Posição relativa a outro elemento ou a página
+        position = absolute - posição absoluta (fixa) a algum elemento ou a pagina;
+        
+        propriedades : top , bottom, left , right.
+    -->
+    <!--Aula 19 Desafio 2 de CSS-->
+
+
+</body>
+
+</html>

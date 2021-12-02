@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média dos Alunos</title>
+    <style>
+       
+
+        body {
+            background-color: rgba(248, 167, 16, 0.925);
+            color: black;
+        }
+
+        fieldset {
+            background-color: rgb(202, 164, 164);
+            border: black solid 3px;
+            border-radius: 2%;
+            padding: 5px;
+        }
+        
+        .header {
+            text-align: center;
+        
+        }
+
+        label{
+            display: block;
+            float: left;
+        }
+
+        label, input {
+            color: black;
+            font-weight: bolder;
+            width:80px;
+	        margin: 5px 0;
+    
+        }
+
+        input {
+	        width:100px;
+            border: black solid 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <h1>Média dos Alunos</h1>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Notas</legend>
+                <label for="">Português:</label>
+                <input id="pt" type="number" min="0" max="10">
+                <hr>
+                <label for="">Matematica:</label>
+                <input id="mat" type="number" min="0" max="10">
+                <hr>
+                <label for="">Inglês:</label>
+                <input id="in" type="number" min="0" max="10">
+                <hr>
+                <label for="">História:</label>
+                <input id="his" type="number" min="0" max="10">
+                <hr>
+                <input type="submit" value="Enviar Notas" onclick="calcular()">
+                
+                
+            </fieldset>
+        </form>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

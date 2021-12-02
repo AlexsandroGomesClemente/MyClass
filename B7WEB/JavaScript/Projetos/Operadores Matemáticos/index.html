@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino de JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+           
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            background-color: black;
+            
+        }
+        .Form {
+            margin: 40px 0px;
+            text-align: center;
+            background-color: white;
+            height: 500px;
+            width: 500px;
+            border: 2px solid orangered;
+            border-radius: 20%;
+        }
+        h1 {
+            color: orangered;
+            text-align: center;
+            margin: 10px;
+            
+        }
+        h2 {
+            text-align: center;
+            color: orangered;
+
+        }
+    </style>
+</head>
+<body>
+
+    <H1>Exercios de JavaScript</H1>  
+    
+    <div class="Form">
+        <h2>Somar</h2>
+        <input type="number" id="a1">
+        <input type="number" id="a2">
+        <input type="submit" value="Enviar" onclick="Somar()">
+        
+        <h2>Subtrair</h2>
+        <input type="number" id="s1">
+        <input type="number" id="s2">
+        <input type="submit" value="Enviar" onclick="Subtrair()">
+        
+        <h2>Multiplicar</h2>
+        <input type="number" id="m1">
+        <input type="number" id="m2">
+        <input type="submit" value="Enviar" onclick="Multiplicar()">
+        
+        <h2>Divisão</h2>
+        <input type="number" id="d1">
+        <input type="number" id="d2">
+        <input type="submit" value="Enviar" onclick="Divisao()">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
