@@ -80,3 +80,14 @@
 */
 
 /*Aula 12 Desafio 1 */
+
+/*Aula 13 Operadores Aritiméticos*/
+/*Aula 14 Operadores Aritiméticos*/
+/*Aula 15 Operadores Aritiméticos*/
+/*Aula 16 Operadores Aritiméticos*/
+/*Aula 17 Operadores Aritiméticos*/
+/*Aula 18 Operadores Aritiméticos*/
+/*Aula 19 Operadores Aritiméticos*/
+/*Aula 20 Operadores Aritiméticos*/
+/*Aula 21 Operadores Aritiméticos*/
+/*Aula 22 Operadores Aritiméticos*/
