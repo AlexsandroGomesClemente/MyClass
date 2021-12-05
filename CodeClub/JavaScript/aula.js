@@ -37,7 +37,7 @@
     Pode usar números fracionados
 */
 
-/*Aula 8 Tipos de dados - Object 
+/*Aula 8 Tipos de dados - Object
 
     Todo objeto tem propriedades e para cada propriedade tem um valor como cor , marca,tamanho.
 
@@ -54,25 +54,25 @@
 /*Aula 9 Tipos de dados - BOOLEAN
 
     Boolean = retorna verdadeiro ou falso , sim ou nao .
-    true = 1 
-    false = 0 
+    true = 1
+    false = 0
     O = serve para atribuir oo valor
     O == Serve para comparar .
     O === Serve para comarar o tipo.
 */
 
-/*Aula 10 Tipos de dados - Array 
+/*Aula 10 Tipos de dados - Array
 
     Array é igual um vetor , lista , você guarda dados do mesmo tipos ou de outros valores.
 
     Dentro de um array cabe objetos, do mesmo jeito que dentro de um object cabe um array
-    Um array começa daa posição 0 
+    Um array começa daa posição 0
 */
 
-/*Aula 11 Math 
+/*Aula 11 Math
     Math é uma biblioteca .
     Math.PI = o número do PI 3.14
-    Math.pow(2,2) = Potencia 
+    Math.pow(2,2) = Potencia
     Math.sqrt(2,25) = Raiz quadrada
     Math.random() = Mostra um número aleatorio ente 0 e 1
     Math.ceil()= Arredonda para cima o número.
@@ -81,13 +81,171 @@
 
 /*Aula 12 Desafio 1 */
 
-/*Aula 13 Operadores Aritiméticos*/
-/*Aula 14 Operadores Aritiméticos*/
-/*Aula 15 Operadores Aritiméticos*/
-/*Aula 16 Operadores Aritiméticos*/
-/*Aula 17 Operadores Aritiméticos*/
-/*Aula 18 Operadores Aritiméticos*/
-/*Aula 19 Operadores Aritiméticos*/
-/*Aula 20 Operadores Aritiméticos*/
-/*Aula 21 Operadores Aritiméticos*/
-/*Aula 22 Operadores Aritiméticos*/
+/*Aula 13 Operadores Aritiméticos
+    Os operadores Aritiméticos são úteis para fazer Operaçoes de matemática.
+    + = Adição
+    - = Subtração
+    * = Multiplicação
+    / = Divisão
+    % = Resto da divisão
+    ++ incrimento de adição
+    -- incremento de subtração
+    ** incremento de multiplicação
+*/
+
+/*Aula 14 Operadores Atribuição
+
+    = Atribui o valor
+    += Atribui a soma
+    -= Atribui a subtração
+    *= Atribui multiplicação
+    /= Atribui divisão
+    %= Atribiu o resto
+*/
+
+/*Aula 15 Operadores Comparação pt.1
+
+    > Maior
+    < Menor
+    >= Maior Igual
+    <= Menor Igual
+    == Igual
+    === Estritamente Igual
+    != Não Igual
+    !== Estritamente não igual
+
+
+*/
+/*Aula 16 Operadores Comparação pt.2*/
+
+
+/*Aula 17 Operadores Logicos
+    && = Operador And só retorna true se os dois parametros forem verdadeiros
+    || = Operador Or  retorna True se um dos paramentros forem verdadeiro
+    !exper = Operador Not  torna o valor true em false , e o valor false em true
+*/
+/*Aula 18 Operadores tenario
+
+    Operador Tenario ? faz o papel de um If else ex:
+    condição ? true : false ;
+*/
+
+/*Aula 19 Operadores typeof delete
+    typeof = fala o tipo da variavel
+    delete apaga a variavel
+*/
+
+/*Aula 20 Operadores If else
+
+    If (condição) {
+        bloco de codigo
+    } else {
+        caso não seja atendida a condição acima
+    }
+
+
+*/
+/*Aula 21 Operadores Else if
+    If (condição) {
+        bloco de código
+    } else If (condição 2){
+        bloco de código
+    } else para finalizar
+*/
+/*Aula 22 Operadores Switch Case
+
+    Switch (condição)
+        case 1 = codigo
+            break
+        case 2 = codigo
+            break
+        case 3 = codigo
+            break
+        case 4 = codigo
+            break
+        default = para o código.
+*/
+
+
+/*Aula 23 Operadores For
+
+for
+A instrução for cria um loop que consiste em três expressões opcionais,
+ dentro de parênteses e separadas por ponto e vírgula, 
+seguidas por uma declaração ou uma sequência de declarações executadas em sequência.
+
+for ([inicialização]; [condição]; [expressão final])
+   declaração
+
+
+   inicialização
+Uma expressão (incluindo expressões de atribuição) ou declarações variáveis. 
+Geralmente usada para iniciar o contador de variáveis. 
+Esta expressão pode, opcionalmente, declarar novas variáveis com a palavra chave var. 
+Essas variáveis não são locais no loop, isto é, elas estão no mesmo escopo que o loop for está. 
+Variáveis declaradas com let são locais para a declaração.
+O resultado desta expressão é descartado.
+
+condição
+Uma expressão para ser avaliada antes de cada iteração do loop.
+ Se esta expressão for avaliada para true, declaração será executado. 
+ Este teste da condição é opcional. Se omitido, a condição sempre será avaliada como verdadeira. 
+ Se a expressão for avaliada como falsa, a execução irá para a primeira expressão após a construção loop for.
+
+ expressão final
+Uma expressão que será validada no final de cada iteração de loop. Isso ocorre antes da próxima avaliação da condição. Geralmente usado para atualizar ou incrementar a variável do contador.
+declaração
+Uma declaração que é executada enquanto a condição for verdadeira. Para executar múltiplas condições dentro do loop, use uma instrução de bloco ({...}) para agrupar essas condições. Para não executar declarações dentro do loop, use uma instrução vazia (;).
+
+*/
+/*Aula 24 Operadores While
+    while
+A declaração while cria um laço que executa uma rotina especifica enquanto a 
+condição de teste for avaliada como verdadeira.
+A condição é avaliada antes da execução da rotina.
+
+Syntax
+while (condição) {
+  rotina
+}
+
+condição
+Uma expressão avaliada antes de cada passagem através do laço. Se essa condição for avaliada como verdadeira,
+ a rotina é executada.
+ Quando a condição for avaliada como falsa, a execução continua na declaração depois do laço while.
+rotina
+
+Uma declaração que é executada enquanto a condição é avaliada como verdadeira.
+ Para executar multiplas declarações dentro de um laço, use uma declaração em bloco ({ ... }) 
+ para agrupar essas declarações.
+
+*/
+/*Aula 25 Operadores For Of
+
+    for...of
+O loop for...of percorre objetos iterativos (incluindo Array, Map, Set, o objeto arguments e assim por diante), 
+chamando uma função personalizada com instruções a serem executadas para o valor de cada objeto distinto.
+
+Sintaxe
+for (variavel of iteravel) {
+  declaração
+}
+
+
+*/
+/*Aula 26 Operadores For in
+
+for...in
+O laço for...in  interage sobre propriedades enumeradas de um objeto, na ordem original de inserção.  O laço pode ser executado para cada propriedade distinta do objeto.
+
+Syntax
+for (variavel in objeto) {...
+}
+
+variavel
+Uma propriedade diferente do objeto é atribuida em cada iteração.
+objeto
+
+Objeto com as propriedades enumeradas.
+
+*/
