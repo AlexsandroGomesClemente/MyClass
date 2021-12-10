@@ -249,3 +249,115 @@ objeto
 Objeto com as propriedades enumeradas.
 
 */
+
+/* JavaScript 6.1 */
+
+/* Aula Function 1
+    Function é um bloco de codigo onde você pode chamar um algoritmo e retornar algo.
+    Existem 3 tipos de function :
+    function Trocar (Parametro) {
+        // Codigo que séra executado.
+    }
+    let trocar = function(){
+        //Codigo a ser executado
+    }
+    let trocar = () => {//Codigo a ser executado;}
+
+    trocar(argumento) = função sendo chamada.
+
+
+*/
+
+/* Aula 3 Return Functions
+        return é um valor que a function pode retorna.
+
+*/
+
+/*Aula 8 Manipulação de arrays 
+        push = Inseri um item ao array
+        length = Conta quantos itens tem em um array
+        sort =  Ordena em ordem alfabética o array
+        delete = apaga o item
+        splice = remove um item do array e adiciona outro ex = (3, 1 "Agua") aparti do index 3 remove 1 
+        slice =  Cria um novo array aparti de um comando 
+        pop = remove o ultimo item do array
+        shift = remove o primeiro item do array
+*/
+
+/*Aula 10 For each
+        O for each executa uma dada função em cada item do array 
+        Ele funciona como um map para arrays.
+
+*/
+
+/* Aula 11 Map
+O método map() invoca a função callback passada por argumento para cada elemento do Array e devolve um novo Array como resultado.
+var numbers = [1, 4, 9];
+var doubles = numbers.map(function(num) {
+  return num * 2;
+});
+// doubles é agora [2, 8, 18]. numbers ainda é [1, 4, 9]
+*/
+
+/* Aula 12 Filter
+
+    O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+    function isBigEnough(value) {
+  return value >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtrado é [12, 130, 44]
+*/
+/* Aula 13 Reduce 
+O método reduce() executa uma função reducer (fornecida por você) para cada elemento do array, resultando num único valor de retorno.
+const array1 = [1, 2, 3, 4];
+const reducer = (previousValue, currentValue) => previousValue + currentValue;
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+// expected output: 15
+*/
+
+/* JavaScript Web*/
+
+/* Aula 9 Selecionando atributos
+    Pegando valor do elemento 
+    usa o .attributes ou .value e pode ser guardado em uma variavel.
+*/
+
+/* Aula 10 Manipulando textos
+    .innerText = pode alterar o texto da tag no html
+    .textContent = o mesmo resultado
+    .ineerHTML= o mesmo resultado , porem pode ser inserido HTML.
+
+*/
+
+/* Aula 11 Manipulando Estilos
+
+Conseguimos manipular style com JS
+.style.color = red muda a cor
+.style.atributo = 'prop'
+*/
+
+/* Aula 12 Eventos
+    Evento e o ato de dialogar com a pagina interagir.
+    on+oevento
+
+    element.onclick = () => {Evento}
+
+*/
+
+/* Aula 13 Propriedades do eventos
+
+    Pode pegar um atributo pelo o evento
+
+
+*/
+
+/* Aula 14 Event Lisening
+    tag.addEventListener('evento', (function) =>) = Ele ouve o evento e quando aconte ele traz o resultado.
+*/
+
+/* Aula 15  */
