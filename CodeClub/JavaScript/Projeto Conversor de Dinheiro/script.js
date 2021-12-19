@@ -6,12 +6,14 @@ const selec = document.getElementById('select')
 
 const dolar = 5.68
 const euro = 7.68
+const bit = 0001
 
 selec.addEventListener('change', changeCoin)
 
 function calcValue() {
     let res = Value.value / dolar
     let res2 = Value.value / euro
+    let res3 =  bit * (Value.value /1000)
     Span.innerHTML = new Intl.NumberFormat("pt-BR", {
         style: "currency",
         currency: "BRL",
@@ -32,6 +34,15 @@ function calcValue() {
             }).format(res2.toFixed(2))
                 
             break;
+
+            case 'BitCoin':
+
+                DolarP.innerHTML = new Intl.NumberFormat("en-US", {
+                    style: "currency",
+                    currency: "BTC",
+                }).format(res3.toFixed(10))
+                    
+                break;
         default:
             break;
     }
@@ -49,7 +60,11 @@ function changeCoin() {
     if (selec.value === "US$ Dolar Americano") {
         nome.innerHTML = 'Dolar'
         imgC.src = "./assets/eua.png"
+    }
 
+    if (selec.value === "BitCoin") {
+        nome.innerHTML = 'BitCoin'
+        imgC.src = "./assets/bit.png"
     }
     calcValue()
 }
