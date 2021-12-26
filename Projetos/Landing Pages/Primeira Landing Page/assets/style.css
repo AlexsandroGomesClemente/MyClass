@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&family=Righteous&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sarala', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(68.15deg, #2F2325 16.62%, #4b48e4 85.61%);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.4px solid #FFF2E7;
+}
+
+.logo-img {
+    height: 62px;
+    width: 62px;
+    margin: 18px 0px 18px 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.Menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 262px;
+}
+
+.Menu ul li {
+    margin-right: 20px;
+    list-style: none;
+    color: #FFF2E7;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+/*Main Conteudo*/
+
+.Top-Content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 168px 0px auto 300px;
+}
+
+.text h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 79px;
+    color: #FFF2E7;
+}
+
+.text p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 39px;
+    color: #ECD6C4;
+    margin: 32px 0 48px;
+}
+
+.text button {
+    background: #ECD6C4;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 20px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 39px;
+    text-align: center;
+    color: #2F2325;
+    padding: 13px 45px;
+}
+
+.text button a {
+    color: #2F2325;
+}
+
+.img-main img {
+    width: 394.13px;
+    height: 429px;
+    margin: 30px 357px auto 250px;
+}
+
+.line hr {
+    text-align: center;
+    width: 276.04px;
+    height: 0px;
+    border-bottom: 0.4px solid #FFF2E7;
+    margin: 139px auto;
+}
+
+/*Main Conteudo Parte 2 */
+
+
+.Bottom-Content {
+    display: block;
+    text-align: center;
+    margin-top: 74px;
+}
+
+.Bottom-Content h2 {
+    font-family: Righteous;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #FFF2E7;
+}
+
+.Bottom-Content ol li {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #ECD6C4;
+    padding: 31px;
+    margin-bottom: 22px;
+}
+
+main {
+    border-bottom: 0.4px solid #FFF2E7;
+    margin-bottom: 127px;
+}
+
+footer {
+    text-align: center;
+    margin: 35px;
+    color: #FFF2E7;
+}
