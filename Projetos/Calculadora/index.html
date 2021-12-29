@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e.Mix Calculadora</title>
+    <link rel="stylesheet" href="./assets/Css/style.css">
+
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        <div class="img-Logo">
+            <a href=""><img src="./assets/Imagem/Logo.png" alt="e.Mix Logo"></a>
+        </div>
+
+        <div class="Area-resultado">
+            <input disabled class="display">
+        </div>
+
+        <div class="Button">
+            <button onclick="Limpar()" class="colorY">C</button>
+            <button onclick="LimparOne()" class="colorY">&#9003</button>
+            <button onclick="RaizQ()" class="colorY">√</button>
+            <button onclick="inserirNumero('/')" class="colorY">/</button>
+
+            <button onclick="inserirNumero('7')" class="colorX">7</button>
+            <button onclick="inserirNumero('8')" class="colorX">8</button>
+            <button onclick="inserirNumero('9')" class="colorX">9</button>
+            <button onclick="inserirNumero('*')" class="colorY">X</button>
+
+            <button onclick="inserirNumero('4')" class="colorX">4</button>
+            <button onclick="inserirNumero('5')" class="colorX">5</button>
+            <button onclick="inserirNumero('6')" class="colorX">6</button>
+            <button onclick="inserirNumero('-')" class="colorY">-</button>
+
+            <button onclick="inserirNumero('1')" class="colorX">1</button>
+            <button onclick="inserirNumero('2')" class="colorX">2</button>
+            <button onclick="inserirNumero('3')" class="colorX">3</button>
+            <button onclick="inserirNumero('+')" class="colorY">+</button>
+
+            <button onclick="Inverte()" class="colorX">+/-</button>
+            <button onclick="inserirNumero('0')" class="colorX">0</button>
+            <button onclick="inserirNumero('.')" class="colorX">.</button>
+            <button onclick="calculador()" class="colorZ">=</button>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./assets/JavaScript/javascript.js"></script>
+</body>
+
+</html>

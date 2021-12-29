@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,600&family=Righteous&family=Road+Rage&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Sarala:wght@400;700&display=swap');
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+}
+/*Section Header*/
+.headerSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006A6A;
+    width: 100%;
+    height: 60px;
+}
+
+.text-header {
+    margin-left: 25px;
+}
+.text-header h1 {
+    font-weight:300;
+    color: #FFFFFF;
+}
+.text-header strong {
+    font-weight: bold;
+}
+
+.img-header a img {
+    width: 115px; height: 40px;
+    margin-right: 25px;
+}
+
+/*Fim Section Header*/
+
+/*Adicionar*/
+
+.Adicionar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 25px;
+}
+.Adicionar input {
+    width: 100%; height: 40px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 15px;
+    outline: none;
+}
+
+.Adicionar button {
+    width:25%;
+    background-color: #36AFD1;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;   
+    cursor: pointer;
+}
+
+.Adicionar button:hover {
+    opacity: 0.8;
+}
+.Adicionar button:active {
+    opacity: 0.5;
+}
+
+/*Fim Adicionar*/
+
+/*Lista de entrada */
+
+.Lista-Inicio {
+   margin: 40px 15px;
+}
+.Lista-Inicio h3 {
+    font-weight: bold;
+    color: #2C7A7A;
+}
+
+.Lista-Inicio ul {
+    list-style: none;
+    width: 100%;
+}
+
+.Lista-Inicio ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B5B5B5;
+    
+}
+
+.Lista-Inicio ul li input {
+    border:10px double #B5B5B5;
+    width: 20px; height: 20px;
+    margin:10px 10px 10px 0;
+    color: #7B7B7B;
+}
+
+.Lista-Inicio ul li button{
+    background:transparent;
+    border: none;
+    cursor: pointer;
+    color: #7B7B7B ;
+    width: 50px; height: 50px;
+}
+
+.Lista-Inicio ul li button:hover {
+    opacity: 0.8;
+}
+.Lista-Inicio ul li button:active {
+    opacity: 0.5;
+}
+
+/*Lista de entrada Fim*/
+

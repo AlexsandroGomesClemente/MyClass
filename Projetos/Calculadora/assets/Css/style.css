@@ -1,0 +1,96 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 50px auto;
+    
+}
+
+.mainContainer {
+    width: 300px; height: 515px;
+    background-color:#070706;
+    border-radius: 5px;
+    box-shadow: inset 0 0 1em, 0 0 1em black;
+}
+
+/*Logo Area*/
+
+.img-Logo {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 60px;
+    background-color: #006a6a;
+    text-align: center;
+    padding-top: 10px;
+}
+.img-Logo a img {
+    width: 120px;
+    height: 35px ;
+}
+
+/*Logo Area Fim*/
+
+/* Area de Resultado*/
+
+.Area-resultado {
+    height: 25%;
+}
+.Area-resultado input{
+    background-color:#070706;;
+    border: none;
+    height:100%; width: 100%;
+    color: White;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*Area de Resultado Fim*/
+
+/*Área de Números*/
+
+.Button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.Button button  {
+    width: 75px; height: 65px;
+    border: 1px solid  #070706;
+    color: #C9C9C9;
+    cursor: pointer;
+}
+.Button button:hover {
+    opacity: 0.8;
+}
+.Button button:active {
+    opacity: 0.6;
+}
+
+.colorY{
+    background-color: #262626;
+    font-size: 17px;
+}
+.colorZ {
+    background-color: #DF7F00;
+    font-size: 20px;
+}
+.colorX {
+    background-color: #373737;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*Fim Butões*/
