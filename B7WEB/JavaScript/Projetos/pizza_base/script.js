@@ -5,6 +5,7 @@ let modalKey = 0
 const c = (e) => document.querySelector(e)
 const cs = (e) => document.querySelectorAll(e)
 
+
 pizzaJson.map((pizza, index) => {
     let pizzaItem = c('.models .pizza-item').cloneNode(true)
 
@@ -96,38 +97,89 @@ c('.pizzaInfo--addButton').addEventListener('click', () => {
     let size = parseInt(c('.pizzaInfo--size.selected').getAttribute('data-key'))
 
 
-    let identificador = pizzaJson[modalKey].id+'@'+size
+    let identificador = pizzaJson[modalKey].id + '@' + size
 
-    let key = carrinho.findIndex((item)=> item.identificador == identificador)
+    let key = carrinho.findIndex((item) => item.identificador == identificador)
 
     if (key > -1) {
         carrinho[key].qt += modalQt
-    }else {
+    } else {
         carrinho.push({
             identificador,
-            id:pizzaJson[modalKey].id,
+            id: pizzaJson[modalKey].id,
             size,
-            qt:modalQt
+            qt: modalQt
         })
-    
-    }
 
-    attCarrinho()
+    }
     closeModal()
+    attCarrinho()
+   
 })
 
-const attCarrinho = ()=> {
+const attCarrinho = () => {
 
-    if (carrinho.length > 0 ) {
-        
+    if (carrinho.length > 0) {
+
         c('aside').classList.add('show')
+        c('.cart').innerHTML = ''
 
-     for (const i in carrinho) {
-         
-        let pizzaItem = pizzaJson.find((item)=>item.id == carrinho[i].id)
-        
-     }
 
+        let subTotal = 0
+        let desconto = 0
+        let total = 0
+
+        for (const i in carrinho) {
+
+            subTotal += pizzaItem.price * cart[i].qt
+            let pizzaItem = pizzaJson.find((item) => item.id == carrinho[i].id)
+            let cartItem = c('.models .cart--item').cloneNode(true)
+
+            let pizzaSizeName
+            switch (cart[i].size) {
+                case 0:
+                    pizzaSizeName = 'P'
+                    break;
+                case 1:
+                    pizzaSizeName = 'M'
+                    break;
+
+                case 2:
+                    pizzaSizeName = 'G'
+                    break;
+
+                default:
+                    break;
+            }
+
+            let pizzaName = `${pizzaItem.name}(${pizzaSizeName})`
+
+            cartItem.querySelector('.img').src = pizzaItem.img
+            cartItem.querySelector('.cart--item-nome').innerHTML = pizzaName
+            cartItem.querySelector('.cart--item--qt').innerHTML = cart[i].qt
+            cartItem.querySelector('.cart--item-qtmenos').addEventListener('click', () => {
+                if (cart[i] > 1) {
+                    cart[i].qt--
+                } else {
+                    cart.splice(i, 1)
+                }
+
+                attCarrinho()
+            })
+            cartItem.querySelector('.cart--item-qtmais').addEventListener('click', () => {
+                cart[i].qt++
+                attCarrinho()
+            })
+
+            c('.cart').append(cartItem)
+        }
+
+        desconto = subTotal * 0.1
+        total = subTotal - desconto
+
+        c('subtotal span:last-child').innerHTML = ` R$  ${subTotal.toFixed(2)}`
+        c('desconto span:last-child').innerHTML = ` R$ ${desconto.toFixed(2)}`
+        c('total span:last-child').innerHTML = ` R$ ${total.toFixed(2)}`
     } else {
         c('aside').classList.remove('show')
     }
